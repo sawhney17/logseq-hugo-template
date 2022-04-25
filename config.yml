@@ -1,0 +1,48 @@
+baseURL: https://example.com/
+languageCode: en-us
+title: Author Name
+theme: "PaperMod"
+
+params:
+    homeInfoParams:
+        Title: Hello World 👋
+        Content: This is a sample hugo template
+
+    socialIcons: # optional
+        - name: "github"
+          url: "https://github.com/sawhney17"
+        - name: "youtube"
+          url: "https://www.youtube.com/channel/UCjMJeOCEAG2XFtd9JvZwomw"
+        - name: "twitter"
+          url: "https://twitter.com/aryansawhney17"
+        - name: "kofi" 
+          url: "https://buymeacoffee.com/sawhney17"
+        - name: "rss"
+          url: "https://aryansawhney.com/index.xml"
+    ShowReadingTime: true
+    author: "One Nice Person"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+    main:
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 20
+        - identifier: archive
+          name: Archive
+          url: /archives/
+          weight: 20
